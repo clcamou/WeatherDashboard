@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let test = false;
     // use school key inorder to get forecast data
-    const apiKey = "166a433c57516f51dfab1f7edaed8413";
+    let APIKey = "ad5b05f2107956afacca6e7b08b1f854";
     let url = 'https://api.openweathermap.org/data/2.5/';
     let requestType = ""; 
     let query ="";
@@ -102,7 +102,7 @@ $(document).ready(function () {
   
       // set queryURL based on type of query
       requestType = 'weather';
-      query = `?${city}&units=imperial&appid=${apiKey}`;
+      query = `?${city}&units=imperial&appid=${APIKey}`;
       queryURL = `${url}${requestType}${query}`;
   
       if (test) console.log(`cur queryURL: ${queryURL}`);
@@ -148,7 +148,7 @@ $(document).ready(function () {
   
       // set queryURL based on type of query
       requestType = 'forecast/daily';
-      query = `?${city}&cnt=6&units=imperial&appid=${apiKey}`;
+      query = `?${city}&cnt=6&units=imperial&appid=${APIKey}`;
       queryURL = `${url}${requestType}${query}`;
   
       // Create an AJAX call to retrieve data Log the data in console
@@ -243,7 +243,7 @@ $(document).ready(function () {
   
       // set queryURL based on type of query
       requestType = 'uvi';
-      query = `?${city}&appid=${apiKey}`;
+      query = `?${city}&appid=${APIKey}`;
       queryURL = `${url}${requestType}${query}`;
   
       // Create an AJAX call to retrieve data Log the data in console

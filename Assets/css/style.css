@@ -3,13 +3,13 @@ body {
 }
 
 .jumbotron {
-    text-align: center;
-    background-color: black;
-    color: white;
-    border-radius: 0;
-    border-bottom: 10px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
   
   ul{ 
     list-style-type: none;
@@ -27,14 +27,12 @@ body {
   
   .card {
     width: 100%;
-    background-color: #ececec;
+    background-color: #FFFFFF;
   }
   
   
   .forecast-card {
-    background-color: #8FCBFF;
-    /* width: 140px; */
-    /* padding: 10px; */
+    background-color: #007BFF;
   }
   
   .search-section {
@@ -47,11 +45,11 @@ body {
     border-width: thin;
     margin: 5px;
     padding-left: 2px;
-    background-color: lightgrey;
+    background-color: transparent;
   }
   
   .cityList:hover {
-    background-color: #28a745;
+    background-color: blue;
     color: #fff;
   }
   
@@ -61,10 +59,9 @@ body {
 
   footer {
     padding: 0;
-    clear: both;
     font-size: 20px;
-    color: white;
-    color: #ccc;
+    background-color: black;
+    color:  white;
     text-align: center;
-    background: black;
+    border-top: 8px solid black;
   }
