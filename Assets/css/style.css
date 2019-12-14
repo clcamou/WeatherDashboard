@@ -1,75 +1,83 @@
-/*weather backdrop*/
-body {
-  background-image: url(../images/weather/weather.png);
-}
-/*header*/
-.jumbotron {
-  text-align: center;
-  background-color: black;
-  color: white;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*Container for the pulled data*/
-.card {
-  background-color: white;
-  height: 50%;
-  width: 100%;
-}
-
-.card-1 {
-  background-color: transparent;
-}
-
-  ul{ 
-    list-style-type: none;
-    padding-left: 0;
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
   }
-  
-  li{ 
+
+  .container {
+      width: 900px;
+      margin: 0 auto;
+      position: relative;
+      min-height: 100vh;
+  }
+
+  body{
+      background-image: url(../image/weather/weather.png);
+      
+  }
+
+  .jumbotron {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ 
+
+  .sidebar {
+    float: left;
+    height: 100%;
+    width: 200px;
+    background-color: white;    
+  }
+
+  .content {
+    float: left;
+    width: 650px;              
+    height: 500px;
+    background-color: transparent;
+    padding-bottom: 2.5rem;
+  }
+
+  h2{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+  }
+
+  h5{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
-  
-  .col { 
-    padding: 5px;
-  }
-  
-  
-  .ul-container {
-    background-color: #007BFF;
-  }
-  
-  .search-section {
-    height: 100%;
-  }
-  
-  
-  .cityList {
-    border: solid;
-    border-width: thin;
-    margin: 5px;
-    padding-left: 2px;
-    background-color: transparent;
-  }
-  
-  .cityList:hover {
-    background-color: blue;
-    color: #fff;
-  }
-  
-  .container {
-    margin-top: 5px;
+
+  li {
+    list-style-type: none;
   }
 
-  footer {
-    padding: 30px 0;
+
+  .card-7 {
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+  }
+
+  .card-2, .card-3, .card-4, .card-5, .card-6 {
+    background-color: #007bff;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  #footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
     clear: both;
     font-size: 20px;
     background-color: black;
     color:  white;
     text-align: center;
-    border-top: 8px solid black;
   }
