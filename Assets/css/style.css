@@ -1,7 +1,8 @@
+/*weather backdrop*/
 body {
   background-image: url(../images/weather/weather.png);
 }
-
+/*header*/
 .jumbotron {
   text-align: center;
   background-color: black;
@@ -10,7 +11,18 @@ body {
   border-bottom: 10px solid black;
   font-family: Arial, Helvetica, sans-serif;
 }
-  
+
+/*Container for the pulled data*/
+.card {
+  background-color: white;
+  height: 50%;
+  width: 100%;
+}
+
+.card-1 {
+  background-color: transparent;
+}
+
   ul{ 
     list-style-type: none;
     padding-left: 0;
@@ -25,13 +37,8 @@ body {
     padding: 5px;
   }
   
-  .card {
-    width: 100%;
-    background-color: #FFFFFF;
-  }
   
-  
-  .forecast-card {
+  .ul-container {
     background-color: #007BFF;
   }
   
@@ -58,7 +65,8 @@ body {
   }
 
   footer {
-    padding: 0;
+    padding: 30px 0;
+    clear: both;
     font-size: 20px;
     background-color: black;
     color:  white;
